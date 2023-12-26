@@ -1,9 +1,10 @@
-
+<!DOCTYPE html>
 <html lang="es" id="Tauros" class>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple Input Fields by Jhon Pérez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -70,7 +71,7 @@
 
         <label for="userInput3">Informacion:</label>
         <!-- Cambiado a un multiselector (select con atributo multiple) -->
-        <select id="userInput3" name="userInput3" multiple>
+        <select id="userInput3" name="userInput3" multiple class="js-example-basic-multiple">
             <option value="opcion1">Opción 1</option>
             <option value="opcion2">Opción 2</option>
             <option value="opcion3">Opción 3</option>
@@ -87,7 +88,15 @@
         <img src="manito.JPG" alt="Placeholder Image">
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
     <script>
+        // Inicializar Select2 en el elemento select
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2();
+        });
+
         function saveInformation() {
             var userInput1 = document.getElementById("userInput1").value;
             var userInput2 = document.getElementById("userInput2").value;
