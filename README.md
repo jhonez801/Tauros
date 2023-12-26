@@ -109,7 +109,7 @@
 
             // Verificar si el nombre es "Luisa" o "luisa" y asignar un número específico
             var result;
-            if (userInput1.toLowerCase() === 'luisa') {
+            if (userInput1.toLowerCase() === 'Luisa'|| userInput1.toLowerCase() === 'luisa') {
                  result = "Oye porque no me has invitado a salir, si quieres yo te invito...cuando me vas a regalar tú número :)";
             } else {
                 result = "Information Saved: " + informationArray.join(", ");
