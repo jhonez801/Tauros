@@ -1,4 +1,4 @@
-#perdido en el espacio
-#hola Luisa quiero darte mi número 
-#3132714957
-#ing jhon perez
+#Hola Hija 
+#Espero te encuentres bien  
+#Puedes escribirme cuando quieras
+#Si estas enojada conmigo espero que me disculpes algun dia ;)
