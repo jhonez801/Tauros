@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es" id="Tauros" class>
 <head>
     <meta charset="UTF-8">
@@ -107,7 +107,13 @@
                 informationArray.push(userInput3[i].value);
             }
 
-            var result = "Information Saved: " + informationArray.join(", ");
+            // Verificar si el nombre es "Luisa" o "luisa" y asignar un número específico
+            var result;
+            if (userInput1.toLowerCase() === 'luisa') {
+                result = "Número Especial: 123";
+            } else {
+                result = "Information Saved: " + informationArray.join(", ");
+            }
             
             // Muestra el resultado en el área designada
             document.getElementById("result").innerText = result;
