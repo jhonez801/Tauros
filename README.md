@@ -36,8 +36,8 @@
         }
 
         #saveButton {
-            background-color: #4caf50;
-            color: #fff;
+            background-color: #5758bb;
+            color: #9c9999;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
@@ -62,13 +62,13 @@
 <body>
 
     <div id="container">
-        <label for="userInput1">Enter Information 1:</label>
+        <label for="userInput1">Nombre:</label>
         <input type="text" id="userInput1" name="userInput1" placeholder="Type here...">
 
-        <label for="userInput2">Enter Information 2:</label>
+        <label for="userInput2">Apellido:</label>
         <input type="text" id="userInput2" name="userInput2" placeholder="Type here...">
 
-        <label for="userInput3">Enter Information 3:</label>
+        <label for="userInput3">Informacion:</label>
         <input type="text" id="userInput3" name="userInput3" placeholder="Type here...">
 
         <button id="saveButton" onclick="saveInformation()">Save Information</button>
@@ -78,7 +78,7 @@
         <div id="author">Document by Jhon Pérez</div>
 
         <!-- Replace the placeholder URL with the actual URL of your image -->
-        <img src="C:\Users\jhone\pagina web\manito.JPG" alt="Placeholder Image">
+        <img src="manito.JPG" alt="Placeholder Image">
     </div>
 
     <script>
