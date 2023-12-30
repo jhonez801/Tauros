@@ -80,6 +80,8 @@
 
         <button id="saveButton" onclick="saveInformation()">Save Information</button>
 
+        <button id="redirectButton" onclick="redirectToURL()">Ir a URL</button>
+
         <div id="result"></div>
 
         <div id="author">Document by Jhon Pérez</div>
@@ -110,7 +112,7 @@
             // Verificar si el nombre es "Luisa" o "luisa" y asignar un número específico
             var result;
             if (userInput1.toLowerCase() === 'Luisa'|| userInput1.toLowerCase() === 'luisa') {
-                 result = "Oye porque no me has invitado a salir, si quieres yo te invito...cuando me vas a regalar tú número :)";
+                 result = "Oye porque no me has invitado a salir?, si tú lo quieres yo te invito...cuando me vas a regalar tú número? :)";
             } else {
                 result = "Information Saved: " + informationArray.join(", ");
             }
@@ -118,7 +120,15 @@
             // Muestra el resultado en el área designada
             document.getElementById("result").innerText = result;
         }
+
+        function redirectToURL() {
+            // Reemplaza 'URL_DE_DESTINO' con la URL real a la que deseas redirigir
+            var destinationURL = "http://www.ejemplo.com";
+            window.location.href = destinationURL;
+        }
     </script>
 
 </body>
 </html>
+
+
