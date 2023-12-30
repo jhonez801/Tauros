@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es" id="Tauros" class>
 <head>
     <meta charset="UTF-8">
@@ -47,11 +47,11 @@
         }
 
         #saveButton {
-            background-color: #108b44; /* Color azul */
+            background-color: #108b44; /* Color verde */
         }
 
         #redirectButton {
-            background-color: #ff0000; /* Color verde */
+            background-color: #ff0000; /* Color rojo */
         }
 
         #blueButton {
@@ -69,6 +69,18 @@
             margin-top: 20px;
             font-style: italic;
             color: #666;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 48%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -90,7 +102,7 @@
             <!-- Agrega más opciones según sea necesario -->
         </select>
 
-        <button id="saveButton" onclick="saveInformation()">Guardar Infornación</button>
+        <button id="saveButton" onclick="saveInformation()">Guardar Información</button>
 
         <button id="redirectButton" onclick="redirectToYouTube()">Ir a YouTube</button>
 
@@ -99,10 +111,16 @@
 
         <div id="result"></div>
 
-        <div id="author">Document by Jhon Pérez</div>
+        <div id="author">Documento por Jhon Pérez</div>
 
-        <!-- Reemplaza 'URL_DE_LA_IMAGEN' con la URL real de tu imagen en línea -->
-        <img src="manito.JPG" alt="Placeholder Image">
+        <!-- Contenedor para imágenes -->
+        <div class="image-container">
+            <!-- Reemplaza 'URL_DE_LA_IMAGEN_1' con la URL real de tu primera imagen en línea -->
+            <img src="manito.JPG" alt="Imagen 1">
+            
+            <!-- Reemplaza 'URL_DE_LA_IMAGEN_2' con la URL real de tu segunda imagen en línea -->
+            <img src="scanearme.png" alt="Imagen 2">
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -129,7 +147,7 @@
             if (userInput1.toLowerCase() === 'Luisa'|| userInput1.toLowerCase() === 'luisa') {
                  result = "Oye porque no me has invitado a salir?, si tú lo quieres yo te invito...cuando me vas a regalar tú número? :)";
             } else {
-                result = "Information Saved: " + informationArray.join(", ");
+                result = "Información Guardada: " + informationArray.join(", ");
             }
             
             // Muestra el resultado en el área designada
@@ -142,15 +160,13 @@
         }
 
         function redirectToGoogle() {
-            // Redirige a la página principal de Google
+            // Redirige a la página principal de Facebook
             window.location.href = "https://www.facebook.com/jhonez801?mibextid=ZbWKwL";
         }
     </script>
 
 </body>
 </html>
-
-
 
 
 
