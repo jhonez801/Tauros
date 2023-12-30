@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es" id="Tauros" class>
 
 <head>
@@ -97,77 +97,6 @@
     </style>
 </head>
 
-  #container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        #saveButton, #redirectButton, #blueButton {
-            color: #ffffff;
-            padding: 12px 24px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 4px;
-            margin-right: 10px;
-        }
-
-        #saveButton {
-            background-color: #108b44; /* Color verde */
-        }
-
-        #redirectButton {
-            background-color: #ff0000; /* Color rojo */
-        }
-
-        #blueButton {
-            background-color: #5758bb; /* Color azul */
-        }
-
-        #result {
-            margin-top: 20px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        #author {
-            text-align: center;
-            margin-top: 20px;
-            font-style: italic;
-            color: #666;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-
-        .image-container img {
-            max-width: 48%;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
 <body>
 
     <div id="container">
