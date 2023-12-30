@@ -64,8 +64,8 @@
             var result;
             if (userInput1.toLowerCase() === 'luisa') {
                 result = "Oye porque no me has invitado a salir?, si tú lo quieres yo te invito...cuando me vas a regalar tú número? :)";
-            } else if (userInput1.toLowerCase() === 'nicol') {
-                result = "¡Hola Nicol! Gracias por usar este formulario. ¿Hay algo más en lo que pueda ayudarte?";
+            } else if (userInput1.toLowerCase() === 'Nicol' && userInput1.toLowerCase()=== 'Perez') {
+                result = "¡Hola Amor! Espero que como siempre te estes portando super bien, cuida de tu abuelita y no olvides que te amo mucho aunque te enojes conmigo. kiss love";
             } else {
                 result = "Información Guardada: " + informationArray.join(", ");
             }
