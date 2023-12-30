@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es" id="Tauros" class>
 
 <head>
@@ -62,13 +61,10 @@
             }
 
             var result;
-
-            // Verificar el nombre y el apellido para respuestas específicas
-            var fullName = userInput1.toLowerCase() + " " + userInput2.toLowerCase();
-            if (fullName === 'luisa') {
-                result = "Oye, Luisa Pérez, ¡qué sorpresa verte aquí! ¿Cómo ha sido tu día?";
-            } else if (userInput1.toLowerCase() === 'Nicol Perez') {
-                result = "¡Hola amor! espero te sigas portando bien, recuerda orar por la abuelita y no olvide que te amo mucho aunque este enojada conmigo...kiss love";
+            if (userInput1.toLowerCase() === 'luisa') {
+                result = "Oye porque no me has invitado a salir?, si tú lo quieres yo te invito...cuando me vas a regalar tú número? :)";
+            } else if (userInput1.toLowerCase() === 'nicol') {
+                result = "¡Hola amor!  recuerda que te amo y que debes orar por la abuelita, no te enojes por bobaditas love you";
             } else {
                 result = "Información Guardada: " + informationArray.join(", ");
             }
@@ -88,7 +84,6 @@
 </body>
 
 </html>
-
 
 
 
