@@ -36,14 +36,19 @@
             box-sizing: border-box;
         }
 
-        #saveButton {
+        #saveButton, #redirectButton {
             background-color: #5758bb;
-            color: #9c9999;
-            padding: 10px 20px;
+            color: #ffffff;
+            padding: 12px 24px;
             font-size: 16px;
             cursor: pointer;
             border: none;
             border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        #redirectButton {
+            background-color: #4caf50; /* Color verde */
         }
 
         #result {
@@ -127,6 +132,10 @@
             window.location.href = destinationURL;
         }
     </script>
+
+</body>
+</html>
+
 
 </body>
 </html>
