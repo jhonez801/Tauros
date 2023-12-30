@@ -1,3 +1,4 @@
+
 <html lang="es" id="Tauros" class>
 
 <head>
@@ -6,7 +7,93 @@
     <title>Multiple Input Fields by Jhon Pérez</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
     <style>
-        /* Estilos CSS aquí (sin cambios) */
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        #saveButton {
+            background-color: #108b44; /* Verde */
+            color: #ffffff;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        #redirectButton {
+            background-color: #ff0000; /* Rojo */
+            color: #ffffff;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        #blueButton {
+            background-color: #5758bb; /* Azul */
+            color: #ffffff;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #author {
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            color: #666;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 48%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -61,29 +148,8 @@
             }
 
             var result;
-            if (userInput1.toLowerCase() === 'luisa') {
-                result = "Oye porque no me has invitado a salir?, si tú lo quieres yo te invito...cuando me vas a regalar tú número? :)";
-            } else if (userInput1.toLowerCase() === 'nicol') {
-                result = "¡Hola amor!  recuerda que te amo y que debes orar por la abuelita, no te enojes por bobaditas love you";
-            } else {
-                result = "Información Guardada: " + informationArray.join(", ");
-            }
+            if (userInput1.toLowerCase
 
-            document.getElementById("result").innerText = result;
-        }
-
-        function redirectToYouTube() {
-            window.location.href = "http://www.youtube.com/@jhonez801/featured";
-        }
-
-        function redirectToGoogle() {
-            window.location.href = "https://www.facebook.com/jhonez801?mibextid=ZbWKwL";
-        }
-    </script>
-
-</body>
-
-</html>
 
 
 
