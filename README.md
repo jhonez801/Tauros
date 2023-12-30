@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es" id="Tauros" class>
 <head>
     <meta charset="UTF-8">
@@ -47,7 +47,7 @@
         }
 
         #saveButton {
-            background-color: #5758bb; /* Color azul */
+            background-color: #3498db; /* Color azul */
         }
 
         #redirectButton {
@@ -55,7 +55,7 @@
         }
 
         #blueButton {
-            background-color: #3498db; /* Color azul */
+            background-color: #5758bb; /* Color azul */
         }
 
         #result {
@@ -90,12 +90,12 @@
             <!-- Agrega más opciones según sea necesario -->
         </select>
 
-        <button id="saveButton" onclick="saveInformation()">Save Information</button>
+        <button id="saveButton" onclick="saveInformation()">Guardar Infornación</button>
 
         <button id="redirectButton" onclick="redirectToYouTube()">Ir a YouTube</button>
 
         <!-- Nuevo botón azul -->
-        <button id="blueButton" onclick="redirectToGoogle()">Botón Azul</button>
+        <button id="blueButton" onclick="redirectToGoogle()">Ir a Facebook</button>
 
         <div id="result"></div>
 
