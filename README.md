@@ -123,7 +123,7 @@
 
         function redirectToURL() {
             // Reemplaza 'URL_DE_DESTINO' con la URL real a la que deseas redirigir
-            var destinationURL = "http://https://www.youtube.com/@jhonez801/featured";
+            var destinationURL = "http://www.youtube.com/@jhonez801/featured";
             window.location.href = destinationURL;
         }
     </script>
