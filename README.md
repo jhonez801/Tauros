@@ -119,7 +119,7 @@
             <img src="manito.JPG" alt="Imagen 1">
             
             <!-- Reemplaza 'URL_DE_LA_IMAGEN_2' con la URL real de tu segunda imagen en línea -->
-            <img src="scanearme.png" alt="Imagen 2">
+            <img src="scaneame.png" alt="Imagen 2">
         </div>
     </div>
 
