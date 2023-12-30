@@ -47,7 +47,7 @@
         }
 
         #saveButton {
-            background-color: #3498db; /* Color azul */
+            background-color: #108b44; /* Color azul */
         }
 
         #redirectButton {
