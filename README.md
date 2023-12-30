@@ -62,11 +62,13 @@
             }
 
             var result;
-            if (userInput1.toLowerCase() === 'luisa') {
-                result = "Oye porque no me has invitado a salir?, si tú lo quieres yo te invito...cuando me vas a regalar tú número? :)";
-                
-            } if (userInput1.toLowerCase() === 'Nicol' {
-                result = "¡Hola Amor! Espero que como siempre te estes portando super bien, cuida de tu abuelita y no olvides que te amo mucho aunque te enojes conmigo. kiss love";
+
+            // Verificar el nombre y el apellido para respuestas específicas
+            var fullName = userInput1.toLowerCase() + " " + userInput2.toLowerCase();
+            if (fullName === 'luisa') {
+                result = "Oye, Luisa Pérez, ¡qué sorpresa verte aquí! ¿Cómo ha sido tu día?";
+            } else if (userInput1.toLowerCase() === 'Nicol Perez') {
+                result = "¡Hola amor! espero te sigas portando bien, recuerda orar por la abuelita y no olvide que te amo mucho aunque este enojada conmigo...kiss love";
             } else {
                 result = "Información Guardada: " + informationArray.join(", ");
             }
@@ -86,8 +88,6 @@
 </body>
 
 </html>
-
-
 
 
 
