@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es" id="Tauros" class>
 
 <head>
@@ -94,6 +94,11 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        #qrCode {
+            max-width: 100%;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -109,9 +114,9 @@
         <label for="userInput3">Informacion:</label>
         <!-- Cambiado a un multiselector (select con atributo multiple) -->
         <select id="userInput3" name="userInput3" multiple class="js-example-basic-multiple">
-            <option value="opcion1">Opción 1</option>
-            <option value="opcion2">Opción 2</option>
-            <option value="opcion3">Opción 3</option>
+            <option value="Registro">Registro</option>
+            <option value="Solicitud">Solicitud</option>
+            <option value="Verificar">Verificar</option>
             <!-- Agrega más opciones según sea necesario -->
         </select>
 
@@ -134,6 +139,9 @@
             <!-- Reemplaza 'URL_DE_LA_IMAGEN_2' con la URL real de tu segunda imagen en línea -->
             <img src="scaneame.png" alt="Imagen 2">
         </div>
+
+        <!-- Contenedor para el código QR -->
+        <div id="qrCode"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -149,6 +157,12 @@
             var userInput1 = document.getElementById("userInput1").value;
             var userInput2 = document.getElementById("userInput2").value;
             var userInput3 = document.getElementById("userInput3").selectedOptions;
+
+            // Verificar si los campos están vacíos
+            if (userInput1.trim() === '' || userInput2.trim() === '' || userInput3.length === 0) {
+                alert("Por favor, complete todos los campos.");
+                return;
+            }
 
             var informationArray = [userInput1, userInput2];
             for (var i = 0; i < userInput3.length; i++) {
@@ -180,3 +194,4 @@
 
 </body>
 </html>
+
