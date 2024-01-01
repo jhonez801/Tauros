@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es" id="Tauros" class>
 
 <head>
@@ -111,6 +111,9 @@
         <label for="userInput2">Apellido:</label>
         <input type="text" id="userInput2" name="userInput2" placeholder="Type here...">
 
+        <label for="userInput4">Clave:</label>
+        <input type="text" id="userInput4" name="userInput4" placeholder="Type here...">
+
         <label for="userInput3">Informacion:</label>
         <!-- Cambiado a un menú desplegable (select) -->
         <select id="userInput3" name="userInput3" class="js-example-basic-single">
@@ -156,10 +159,11 @@
         function saveInformation() {
             var userInput1 = document.getElementById("userInput1").value;
             var userInput2 = document.getElementById("userInput2").value;
+            var userInput4 = document.getElementById("userInput4").value;
             var userInput3 = document.getElementById("userInput3").value;
 
             // Verificar si los campos están vacíos
-            if (userInput1.trim() === '' || userInput2.trim() === '' || userInput3.trim() === '') {
+            if (userInput1.trim() === '' || userInput2.trim() === '' || userInput4.trim() === '' || userInput3.trim() === '') {
                 alert("Por favor, complete todos los campos.");
                 return;
             }
@@ -169,7 +173,7 @@
             if (userInput1.toLowerCase() === 'Luisa'|| userInput1.toLowerCase() === 'luisa') {
                  result = "Oye porque no me has invitado a salir?, si tú lo quieres yo te invito...cuando me vas a regalar tú número? :)";
             } else {
-                result = "Información Guardada: Nombre: " + userInput1 + ", Apellido: " + userInput2 + ", Informacion: " + userInput3;
+                result = "Información Guardada: Nombre: " + userInput1 + ", Apellido: " + userInput2 + ", Clave: " + userInput4 + ", Informacion: " + userInput3;
             }
             
             // Muestra el resultado en el área designada
@@ -189,3 +193,4 @@
 
 </body>
 </html>
+
